@@ -102,6 +102,7 @@ int volt_convert(float volts)
 }
 
 // Uses wasd keys on keyboard to control chair
+// Granularity of acceleration can be changed by change incrementation value.
 
 void wasd(char input)
 {
@@ -133,10 +134,6 @@ int main()
 
    // input stream temp
    char x; 
-
-   // What are these
-   //int last_v1=125;
-   //int last_v2=125;
 
    // Initialize the interface by giving it an external device ID.
    // The MCP4725 defaults to address 0x60.   
